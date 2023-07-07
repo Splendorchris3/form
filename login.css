@@ -1,0 +1,36 @@
+
+body {
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frm {
+    display: flex;
+    
+    justify-content: center;
+    
+    box-shadow: rgba(0, 0, 0, 0.24)
+    0px 3px 8px;
+    width: 75vw;
+    height: 85vh;
+    
+
+    
+}
+
+input {
+    width: 45vw;
+    height: 5vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+button {
+    width: 45vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+} 

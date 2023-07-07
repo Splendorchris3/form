@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="forgot.css" />
+  </head>
+  <body>
+    <main>
+      <div class="formDiv">
+        <form>
+          <h3 style="text-align: center">RESET PASSWORD</h3>
+          <div>
+            <label>Email:</label><br />
+            <input class="input" type="email" id="email"  />
+            <p style="color: red; display: none;" id="eerror">email is required</p>
+          </div>
+         
+          <div>
+            <label>NewPassword:</label><br />
+            <input class="input" type="password" id="newpassword" />
+            <p style="color: red; display: none;" id="nperror">put a new password</p>
+          </div>
+
+          <div>
+            <label>ConfirmPassword:</label><br />
+            <input class="input" type="password" id="confirmpassword" />
+            <p style="color: red; display: none;" id="cperror">password dose not match</p>
+          </div>
+          <button id="button" onclick="click">Reset password</button>
+          
+         
+        </form>
+      </div>
+    </main>
+
+    <script src="forgot.js"></script>
+  </body>
+</html>
