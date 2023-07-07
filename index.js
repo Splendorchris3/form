@@ -18,7 +18,7 @@ button.addEventListener("click", function (e) {
   let smallEmail = document.getElementById("smallEmail");
   let smallPassword = document.getElementById("smallPassword");
   let smallCheck = document.getElementById("smallCheck");
-  let userEmail = localStorage.getItem("email")
+  let userEmail = localStorage.getItem("email");
 
   for (const item of input) {
     if (item.value === "") {
@@ -60,15 +60,12 @@ button.addEventListener("click", function (e) {
         password.style.border = "1px solid black";
       }, 5000);
     } else if (userEmail === email.value) {
-        exists.style.display = "block";
-        setTimeout(() => {
-          exists.style.display = "none";  
-          window.location.replace("http://127.0.0.1:5502/login.html");
-        }, 5000);
-    }
-
-    
-    else {
+      exists.style.display = "block";
+      setTimeout(() => {
+        exists.style.display = "none";
+        window.location.replace("http://127.0.0.1:5502/login.html");
+      }, 5000);
+    } else {
       localStorage.setItem("name", name.value);
       localStorage.setItem("email", email.value);
       localStorage.setItem("phone", phone.value);
@@ -78,10 +75,9 @@ button.addEventListener("click", function (e) {
           localStorage.setItem("gender", gen.value);
         }
       }
-      window.location.replace("./index.html");
+      window.location.replace("./home.html");
     }
     {
-   
     }
   }
 });
